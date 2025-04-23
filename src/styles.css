@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --negro: #393939;
+    --blanco: white;
+    --tipo-principal: 'Playfair Display', serif;
+    --tipo-secundaria: Verdana;
+    --limite:120em;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+*::before,
+*::after {
+    display: block;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    background-image: radial-gradient(hsla(0, 0%, 58%, .3) .0625rem, transparent 0);
+    background-size: 1.25rem 1.25rem;
+    font-family: var(--tipo-principal);
+    color: var(--blanco);
+    /* hyphens: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: none; */
+}
+
+.bg-primary-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgba(9 14 22/var(--tw-bg-opacity));
+}
